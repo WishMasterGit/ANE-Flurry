@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		195154ED17C2CA2600AFA5A8 /* FlashRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 195154EC17C2CA2600AFA5A8 /* FlashRuntimeExtensions.h */; };
-		3606557229A62B6459AECF3A /* libFlurry_4.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 360652BEEB28124A84AFE41D /* libFlurry_4.4.0.a */; };
 		3606575219261ACDD5D7EE47 /* Flurry.h in Headers */ = {isa = PBXBuildFile; fileRef = 3606541CD3AD7F2585689242 /* Flurry.h */; };
 		5AF8AF16153DE65D000A8447 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AF8AF15153DE65D000A8447 /* Foundation.framework */; };
 		5AF8AF1C153DE65D000A8447 /* AirFlurry.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF8AF1B153DE65D000A8447 /* AirFlurry.m */; };
+		798078C819194F8A000712EE /* libFlurry_5.0.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 798078C719194F8A000712EE /* libFlurry_5.0.0.a */; };
 		FAD8E79A15E8409900BAD3C3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD8E79915E8409900BAD3C3 /* SystemConfiguration.framework */; };
 		FAD8E7A415E840DD00BAD3C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD8E7A315E840DD00BAD3C3 /* UIKit.framework */; };
 		FAFF2C8517BBCCA9007D48DD /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFF2C8417BBCCA9007D48DD /* AdSupport.framework */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -27,6 +27,7 @@
 		5AF8AF19153DE65D000A8447 /* AirFlurry-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AirFlurry-Prefix.pch"; sourceTree = "<group>"; };
 		5AF8AF1A153DE65D000A8447 /* AirFlurry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirFlurry.h; sourceTree = "<group>"; };
 		5AF8AF1B153DE65D000A8447 /* AirFlurry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AirFlurry.m; sourceTree = "<group>"; };
+		798078C719194F8A000712EE /* libFlurry_5.0.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurry_5.0.0.a; path = Flurry/libFlurry_5.0.0.a; sourceTree = "<group>"; };
 		FAD8E79915E8409900BAD3C3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		FAD8E7A315E840DD00BAD3C3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FAFF2C8417BBCCA9007D48DD /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
@@ -38,12 +39,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				798078C819194F8A000712EE /* libFlurry_5.0.0.a in Frameworks */,
 				FAFF2C8717BBCCB4007D48DD /* Security.framework in Frameworks */,
 				FAFF2C8517BBCCA9007D48DD /* AdSupport.framework in Frameworks */,
 				FAD8E7A415E840DD00BAD3C3 /* UIKit.framework in Frameworks */,
 				FAD8E79A15E8409900BAD3C3 /* SystemConfiguration.framework in Frameworks */,
 				5AF8AF16153DE65D000A8447 /* Foundation.framework in Frameworks */,
-				3606557229A62B6459AECF3A /* libFlurry_4.4.0.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +71,7 @@
 		5AF8AF14153DE65D000A8447 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				798078C719194F8A000712EE /* libFlurry_5.0.0.a */,
 				195154EC17C2CA2600AFA5A8 /* FlashRuntimeExtensions.h */,
 				FA20572615E2AA1600030F51 /* Flurry */,
 				FAFF2C8417BBCCA9007D48DD /* AdSupport.framework */,
@@ -234,6 +236,7 @@
 					"\"$(SRCROOT)/Networks/Jumptap\"",
 					"\"${PROJECT_DIR}/Flurry/Flurry\"/**",
 					"\"${PROJECT_DIR}/Flurry\"/**",
+					"$(PROJECT_DIR)/Flurry",
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -260,6 +263,7 @@
 					"\"$(SRCROOT)/Networks/Jumptap\"",
 					"\"${PROJECT_DIR}/Flurry/Flurry\"/**",
 					"\"${PROJECT_DIR}/Flurry\"/**",
+					"$(PROJECT_DIR)/Flurry",
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
