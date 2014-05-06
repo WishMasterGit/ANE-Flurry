@@ -1,0 +1,1 @@
+"%ANT_HOME%\bin\ant" -lib "%FLEX_SDK_HOME%\ant\lib\flexTasks.jar" -buildfile "build\build.xml" package
