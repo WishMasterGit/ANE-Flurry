@@ -14,7 +14,7 @@
 		5AF8AF1C153DE65D000A8447 /* AirFlurry.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF8AF1B153DE65D000A8447 /* AirFlurry.m */; };
 		FAD8E79A15E8409900BAD3C3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD8E79915E8409900BAD3C3 /* SystemConfiguration.framework */; };
 		FAD8E7A415E840DD00BAD3C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD8E7A315E840DD00BAD3C3 /* UIKit.framework */; };
-		FAFF2C8517BBCCA9007D48DD /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFF2C8417BBCCA9007D48DD /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FAFF2C8517BBCCA9007D48DD /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFF2C8417BBCCA9007D48DD /* AdSupport.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		FAFF2C8717BBCCB4007D48DD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFF2C8617BBCCB4007D48DD /* Security.framework */; };
 /* End PBXBuildFile section */
 
